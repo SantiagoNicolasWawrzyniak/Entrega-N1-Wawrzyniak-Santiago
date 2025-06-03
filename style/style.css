@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(/image/cafePortada.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.header2 {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(/image/cafePortada.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #fffdfc;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 10px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* ------------------------------HEADER---------------------------*/
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #fffdfc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #fffdfc;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    font-size: 25px;
+    padding: 11px 35px;
+    border-radius: 30px;
+    background-color: #fffdfc;
+    color: black;
+}
+
+.btn-1:hover {
+    background-color: #595b66;
+    color: white
+}
+
+/* ------------------------------FOTOS CON INFO---------------------------*/
+
+.general {
+    display: flex;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: rgb(236, 229, 217);
+}
+
+.general-2 {
+    background-image: url(/image/tazasCafeManos.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+
+.general-3 {
+    background-image: url(/image/cafeMesa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 70px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 14px;
+    color: black;
+    margin: 25px 0 25px 0;
+}
+
+/* -------------------------------TARJETAS-----------------------------*/
+
+.blog {
+    margin: 50px auto;
+    padding:  10px 0;
+    text-align: center;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1 {
+    padding: 10px 10px;
+}
+
+.blog-1 img {
+    width: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-1 h3 {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.blog-1 .button {
+    font-size: 15px;
+    margin-top: 100px;
+}
+
+
+/* ------------------------------FOTOS CON INFO---------------------------*/
+
+.general2 {
+    display: flex;
+}
+
+.general-4 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: rgb(236, 229, 217);
+}
+
+.general-5 {
+    background-image: url(/image/tres-cafes.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+
+.general-6 {
+    background-image: url(/image/cafe2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 70px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 14px;
+    color: black;
+    margin: 25px 0 25px 0;
+}
+
+/* -------------------------------FOOTER-----------------------------*/
+
+.footer{
+    padding: 100px 0;
+    background-color: black;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h2 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.link a {
+    font-size: 16px;
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* -------------------------------SECCION PRODUCTOS-----------------------------*/
+
+grilla-productos{
+    box-sizing: border-box;
+}
+
+.column{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.column img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* -------------------------------RESPONSIVE MOBILE-----------------------------*/
+
+
+@media (max-width:991px) {
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 70%;
+        left: 0;
+        right: 0;
+        display: none;
+        text-align: center;
+        background-color: #595b66;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .general-1 {
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .general-2, .general-3 {
+        display: none;
+    }
+
+    .general2 {
+        flex-direction: column;
+    }
+
+    .general-4 {
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .general-5, .general-6 {
+        display: none;
+    }
+
+    .blog {
+        padding: 20px;
+    }
+
+    .blog-content{
+        flex-direction: column;
+    }
+
+    .blog-1 {
+        padding: 10px;
+    }
+
+    .blog img {
+        width: 300px;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
