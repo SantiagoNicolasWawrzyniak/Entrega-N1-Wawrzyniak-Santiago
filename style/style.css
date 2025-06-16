@@ -91,6 +91,7 @@ body {
 }
 
 .header-content h1 {
+    margin-top: 20px;
     font-size: 75px;
     line-height: 80px;
     color: #fffdfc;
@@ -99,7 +100,7 @@ body {
 }
 
 .header-content p {
-    font-size: 16px;
+    font-size: 19px;
     color: #fffdfc;
     padding: 0 250px;
     margin-bottom: 25px;
@@ -112,11 +113,12 @@ body {
     border-radius: 30px;
     background-color: #fffdfc;
     color: black;
+    transition: background-color 0.5s ease;
 }
 
 .btn-1:hover {
-    background-color: #595b66;
-    color: white
+    background-color: #595b66;;
+    color: white;
 }
 
 /* ------------------------------FOTOS CON INFO---------------------------*/
@@ -148,7 +150,7 @@ body {
     width: 50%;
 }
 
-h2 {
+.general-1 h2 {
     font-size: 50px;
     line-height: 70px;
     color: black;
@@ -156,8 +158,8 @@ h2 {
     margin-bottom: 20px;
 }
 
-p {
-    font-size: 14px;
+.general-1 p {
+    font-size: 16px;
     color: black;
     margin: 25px 0 25px 0;
 }
@@ -180,7 +182,7 @@ p {
 }
 
 .blog-1 img {
-    width: 300px;
+    width: 250px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
@@ -210,7 +212,7 @@ p {
 }
 
 .general-5 {
-    background-image: url(../image/tres-cafes.jpg);
+    background-image: url(../image/cafe2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -219,7 +221,7 @@ p {
 
 
 .general-6 {
-    background-image: url(../image/cafe2.jpg);
+    background-image: url(../image/tres-cafes.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -235,7 +237,7 @@ h2 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     color: black;
     margin: 25px 0 25px 0;
 }
@@ -284,6 +286,106 @@ grilla-productos{
     height: 100%;
     object-fit: cover;
 }
+
+/* -------------------------------SECCION EXPERIENCIA-----------------------------*/
+
+.profile , .profile2 , .profile3 {
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(235, 232, 222);
+}
+
+.profile {
+    margin-bottom: 50px;
+}
+
+.profile2 {
+    margin-bottom: 50px;
+}
+
+
+.profile-image {
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.profile-text h3 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.profile-text p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* -------------------------------SECCION CONTACTO-----------------------------*/
+
+#contacto {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a2c2a;
+}
+
+/* Estilos del formulario en seccion Contacto*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Botones */
+input[type="submit"]{
+    background-color: #7a4f44;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover{
+    background-color: #5e3931;
+}
+
 
 
 /* -------------------------------RESPONSIVE MOBILE-----------------------------*/
