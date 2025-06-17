@@ -92,7 +92,7 @@ body {
 
 .header-content h1 {
     margin-top: 20px;
-    font-size: 75px;
+    font-size: 60px;
     line-height: 80px;
     color: #fffdfc;
     text-transform: uppercase;
@@ -100,7 +100,7 @@ body {
 }
 
 .header-content p {
-    font-size: 19px;
+    font-size: 16px;
     color: #fffdfc;
     padding: 0 250px;
     margin-bottom: 25px;
@@ -108,7 +108,7 @@ body {
 
 .btn-1 {
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
     padding: 11px 35px;
     border-radius: 30px;
     background-color: #fffdfc;
@@ -127,9 +127,9 @@ body {
     display: flex;
 }
 
-.general-1 {
+.general-1, .general-4 {
     width: 50%;
-    padding: 100px 250px 100px 100px;
+    padding: 60px 125px 60px 60px;
     background-color: rgb(211, 197, 172);
 }
 
@@ -140,7 +140,6 @@ body {
     background-size: cover;
     width: 50%;
 }
-
 
 .general-3 {
     background-image: url(../image/cafeMesa.jpg);
@@ -205,11 +204,7 @@ body {
     display: flex;
 }
 
-.general-4 {
-    width: 50%;
-    padding: 100px 250px 100px 100px;
-    background-color: rgb(211, 197, 172);
-}
+
 
 .general-5 {
     background-image: url(../image/cafe2.jpg);
@@ -294,7 +289,7 @@ grilla-productos{
     align-items: center;
     max-width: 1300px;
     margin: 50px auto;
-    padding: 60px;
+    padding: 50px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgb(235, 232, 222);
@@ -308,21 +303,19 @@ grilla-productos{
     margin-bottom: 50px;
 }
 
-
 .profile-image {
     width: 50%;
     border-radius: 10px;
-    margin-right: 5px;
 }
 
 .profile-text h3 {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .profile-text p {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 10px;
 }
 
@@ -338,6 +331,7 @@ grilla-productos{
 }
 
 #contacto h2 {
+    font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
     color: #4a2c2a;
@@ -393,7 +387,7 @@ input[type="submit"]:hover{
 
 @media (max-width:991px) {
     .menu {
-        padding: 30px;
+        padding: 20px;
     }
 
     .menu label {
@@ -422,16 +416,29 @@ input[type="submit"]:hover{
         min-height: 0vh;
     }
 
+    .header-content h1{
+        font-size: 60px;
+    }
+
     .header-content {
         padding: 100px 30px;
     }
 
     .header-content p {
+        font-size: 18px;
         padding: 0;
     }
 
     .general {
         flex-direction: column;
+    }
+
+    .general-1, .general-4 p {
+        font-size: 16px;
+    }
+
+    .general-1, .general-4 h2 {
+        font-size: 45px;
     }
 
     .general-1 {
@@ -481,5 +488,9 @@ input[type="submit"]:hover{
     .footer-content {
         flex-direction: column;
         text-align: center;
+    }
+
+    .perfil .profile-image {
+        display: none;
     }
 }
