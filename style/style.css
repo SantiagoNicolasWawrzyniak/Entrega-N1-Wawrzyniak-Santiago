@@ -204,8 +204,6 @@ body {
     display: flex;
 }
 
-
-
 .general-5 {
     background-image: url(../image/cafe2.jpg);
     background-position: center center;
@@ -270,7 +268,7 @@ grilla-productos{
 
 .column{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 300px;
     padding: 20px;
     grid-gap: 10px;
@@ -282,12 +280,50 @@ grilla-productos{
     object-fit: cover;
 }
 
+/* -------------------------------SECCION CAFE-----------------------------*/
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+.cafe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.cafe-container h1{
+    font-size: 50px;
+}
+
+.cafe-container h2{
+    font-size: 30px;
+}
+
+.cafe-container h3{
+    font-size: 20px;
+}
+.cafe-container p{
+    font-size: 18px;
+}
+
+.cafe-container h1, h2, h3 {
+    margin-top: 30px;
+}
+
 /* -------------------------------SECCION EXPERIENCIA-----------------------------*/
 
 .profile , .profile2 , .profile3 {
     display: flex;
     align-items: center;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 50px auto;
     padding: 50px;
     border-radius: 5px;
@@ -380,10 +416,7 @@ input[type="submit"]:hover{
     background-color: #5e3931;
 }
 
-
-
 /* -------------------------------RESPONSIVE MOBILE-----------------------------*/
-
 
 @media (max-width:991px) {
     .menu {
@@ -490,7 +523,7 @@ input[type="submit"]:hover{
         text-align: center;
     }
 
-    .perfil .profile-image {
+    .profile-image{
         display: none;
     }
 }
