@@ -270,7 +270,7 @@ grilla-productos{
 
 .column{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 300px;
     padding: 20px;
     grid-gap: 10px;
