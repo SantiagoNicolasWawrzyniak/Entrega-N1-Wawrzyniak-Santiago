@@ -1,0 +1,538 @@
+// Variables
+
+$primaryColor: #fff;
+$secondaryColor: black;
+$padding: 20px;
+
+// Extends
+
+%flexComponentesVertical {
+    display: flex;
+    align-items: center;
+}
+
+%propiedadesFotosMitad {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+%propiedadesHeader{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(../image/cafePortada.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    @extend %propiedadesHeader;
+    min-height: 100vh;
+    @extend %flexComponentesVertical;
+}
+
+.header2 {
+    @extend %propiedadesHeader;
+    min-height: 12vh;
+    @extend %flexComponentesVertical;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    @extend %flexComponentesVertical;
+}
+
+.logo{
+    color: $primaryColor;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 10px;
+    padding: 20px;
+    color: $primaryColor;
+    display: block;
+    font-weight: 600;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* ------------------------------HEADER---------------------------*/
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    margin-top: 20px;
+    font-size: 60px;
+    line-height: 80px;
+    color: $primaryColor;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: $primaryColor;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    font-size: 20px;
+    padding: 11px 35px;
+    border-radius: 30px;
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    transition: background-color 0.5s ease;
+}
+
+.btn-1:hover {
+    background-color: #595b66;;
+    color: $primaryColor;
+}
+
+/* ------------------------------FOTOS CON INFO---------------------------*/
+
+.general {
+    display: flex;
+}
+
+.general-1, .general-4 {
+    width: 50%;
+    padding: 60px 125px 60px 60px;
+    background-color: rgb(211, 197, 172);
+}
+
+.general-2 {
+    background-image: url(../image/tazasCafeManos.jpg);
+    @extend %propiedadesFotosMitad;
+}
+
+.general-3 {
+    background-image: url(../image/cafeMesa.jpg);
+    @extend %propiedadesFotosMitad;
+}
+
+.general-1 h2 {
+    font-size: 50px;
+    line-height: 70px;
+    color: $secondaryColor;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.general-1 p {
+    font-size: 16px;
+    color: $secondaryColor;
+    margin: 25px 0 25px 0;
+}
+
+/* -------------------------------TARJETAS-----------------------------*/
+
+.blog {
+    margin: 50px auto;
+    padding:  10px 0;
+    text-align: center;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1 {
+    padding: 10px 10px;
+}
+
+.blog-1 img {
+    width: 250px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-1 h3 {
+    font-size: 25px;
+    color: $secondaryColor;
+    margin-bottom: 10px;
+}
+
+.blog-1 .button {
+    font-size: 15px;
+    margin-top: 100px;
+}
+
+
+/* ------------------------------FOTOS CON INFO---------------------------*/
+
+.general2 {
+    display: flex;
+}
+
+.general-5 {
+    background-image: url(../image/cafe2.jpg);
+    @extend %propiedadesFotosMitad;
+}
+
+
+.general-6 {
+    background-image: url(../image/tres-cafes.jpg);
+    @extend %propiedadesFotosMitad;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 70px;
+    color: $secondaryColor;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: $secondaryColor;
+    margin: 25px 0 25px 0;
+}
+
+/* -------------------------------FOOTER-----------------------------*/
+
+.footer{
+    padding: 100px 0;
+    background-color: $secondaryColor;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h2 {
+    font-size: 18px;
+    color: $primaryColor;
+    margin-bottom: 10px;
+}
+
+.link a {
+    font-size: 16px;
+    color: $primaryColor;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* -------------------------------SECCION PRODUCTOS-----------------------------*/
+
+grilla-productos{
+    box-sizing: border-box;
+}
+
+.column{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.column img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* -------------------------------SECCION CAFE-----------------------------*/
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+.cafe-container {
+    @extend %flexComponentesVertical;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.cafe-container h1{
+    font-size: 50px;
+}
+
+.cafe-container h2{
+    font-size: 30px;
+}
+
+.cafe-container h3{
+    font-size: 20px;
+}
+.cafe-container p{
+    font-size: 18px;
+}
+
+.cafe-container h1, h2, h3 {
+    margin-top: 30px;
+}
+
+/* -------------------------------SECCION EXPERIENCIA-----------------------------*/
+
+.profile , .profile2 , .profile3 {
+    @extend %flexComponentesVertical;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(235, 232, 222);
+}
+
+.profile {
+    margin-bottom: 50px;
+}
+
+.profile2 {
+    margin-bottom: 50px;
+}
+
+.profile-image {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.profile-text h3 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.profile-text p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* -------------------------------SECCION CONTACTO-----------------------------*/
+
+#contacto {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: $primaryColor;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a2c2a;
+}
+
+/* Estilos del formulario en seccion Contacto*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Botones */
+input[type="submit"]{
+    background-color: #7a4f44;
+    color: $primaryColor;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover{
+    background-color: #5e3931;
+}
+
+/* -------------------------------RESPONSIVE MOBILE-----------------------------*/
+
+@media (max-width:991px) {
+    .menu {
+        padding: 15px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 70%;
+        left: 0;
+        right: 0;
+        display: none;
+        text-align: center;
+        background-color: #595b66;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 100vh;
+    }
+
+    .header-content h1{
+        font-size: 60px;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .general-1, .general-4 p {
+        font-size: 16px;
+    }
+
+    .general-1, .general-4 h2 {
+        font-size: 45px;
+    }
+
+    .general-1 {
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .general-2, .general-3 {
+        display: none;
+    }
+
+    .general2 {
+        flex-direction: column;
+    }
+
+    .general-4 {
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .general-5, .general-6 {
+        display: none;
+    }
+
+    .blog {
+        padding: 20px;
+    }
+
+    .blog-content{
+        flex-direction: column;
+    }
+
+    .blog-1 {
+        padding: 10px;
+    }
+
+    .blog img {
+        width: 300px;
+    }
+
+    .column {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 300px;
+    padding: 20px;
+    grid-gap: 10px;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image{
+        display: none;
+    }
+}
